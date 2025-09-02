@@ -1,109 +1,154 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pedro J. De Leon | Front-End Developer</title>
-  <style>
-    :root {
-      --primary: #1a1a1a;
-      --accent: #007acc;
-      --bg: #f9f9f9;
-      --text: #333;
-    }
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-      padding: 2rem;
-      max-width: 800px;
-      margin: auto;
-    }
-    header {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-      color: var(--primary);
-    }
-    p.subtitle {
-      font-size: 1.2rem;
-      color: var(--accent);
-    }
-    section {
-      margin-top: 2rem;
-    }
-    h2 {
-      font-size: 1.5rem;
-      border-bottom: 2px solid #eee;
-      padding-bottom: 0.5rem;
-      margin-bottom: 1rem;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    li {
-      background: #fff;
-      margin-bottom: 1rem;
-      padding: 1rem;
-      border-radius: 6px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    }
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-    footer {
-      text-align: center;
-      margin-top: 3rem;
-      font-size: 0.9rem;
-      color: #777;
-    }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tatsu Solutions — Pedro De Leon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Tatsu Solutions — Portfolio of Pedro De Leon. Responsive websites, Shopify, WordPress, front-end development.">
 </head>
 <body>
-  <header>
-    <h1>Pedro J. De Leon</h1>
-    <p class="subtitle">Front-End Developer | HTML • CSS • JavaScript</p>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="#home">Tatsu Solutions<span class="byline"> — Pedro De Leon</span></a>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Open navigation">☰</button>
+      <nav class="nav-links" id="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <section>
-    <h2>About Me</h2>
-    <p>I design clean, responsive interfaces using modern front-end technologies. My work blends technical precision with intuitive user experience. Whether it's a landing page, dashboard, or onboarding flow—I build with clarity and purpose.</p>
-  </section>
+  <main>
+    <section id="home" class="hero reveal">
+      <div class="container">
+        <h1>Hi — I’m Pedro. I build responsive websites & digital solutions.</h1>
+        <p class="lead">Shopify · WordPress · HTML/CSS · CSS animations · Learning JavaScript animation libraries</p>
+        <p class="kicker">Tatsu Solutions LLC — Based in Philadelphia</p>
+        <a class="cta" href="#projects">See my work</a>
+      </div>
+    </section>
 
-  <section>
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>solbear-gpt-api:</strong> Front-end integration with GPT-based API for interactive token rituals</li>
-      <li><strong>TesoroRitmo:</strong> React onboarding app with bilingual UI and custom styling</li>
-      <li><strong>pdeleon29.github.io:</strong> This portfolio site, deployed via GitHub Pages and Netlify</li>
-    </ul>
-  </section>
+    <section id="about" class="about container reveal">
+      <h2>About</h2>
+      <p>Hi Pedro here — a hardworking dev who ships clean, responsive websites. I work full-time at the Philadelphia Water Department and build front-end projects in the evenings. I specialize in Shopify, WordPress, and hand-coded HTML/CSS. I passed the FreeCodeCamp Responsive Web Design course (2022) and I keep leveling up my JavaScript skills.</p>
+      <ul class="skills">
+        <li>HTML &bull; CSS &bull; Responsive Design</li>
+        <li>CSS Animations (keyframes) &bull; Hover effects</li>
+        <li>Shopify &bull; WordPress customizations</li>
+        <li>Git, Netlify deployments, basic CI/CD</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>Skills</h2>
-    <ul>
-      <li>Semantic HTML5 and responsive design</li>
-      <li>Modern CSS (Flexbox, Grid, animations)</li>
-      <li>JavaScript fundamentals and DOM scripting</li>
-      <li>GitHub workflows and Netlify deployment</li>
-    </ul>
-  </section>
+    <section id="projects" class="projects container reveal">
+      <h2>Projects</h2>
+      <p class="muted">A few highlights — replace these with your live demos and repos.</p>
 
-  <section>
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:peter.deleon@gmail.com">peter.deleon@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/pdeleon29" target="_blank">pdeleon29</a></p>
-  </section>
+      <div class="grid">
+        <article class="card">
+          <div class="thumb">
+            <!-- simple inline SVG as placeholder -->
+            <svg width="100%" height="100%" viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Project thumbnail">
+              <rect width="200" height="120" rx="10" fill="#0f172a"></rect>
+              <text x="50%" y="55%" fill="#fff" font-family="Inter, sans-serif" font-size="16" text-anchor="middle">FreeCodeCamp Demo</text>
+            </svg>
+          </div>
+          <h3>FreeCodeCamp Landing</h3>
+          <p class="card-desc">Responsive landing page: HTML/CSS, media queries, and accessible layout.</p>
+          <div class="card-meta">HTML · CSS · Responsive</div>
+          <div class="card-actions">
+            <a class="btn" href="#">Live demo</a>
+            <a class="link" href="#">Code</a>
+          </div>
+        </article>
 
-  <footer>
-    <p>© 2025 Pedro J. De Leon | Built with HTML, CSS & JavaScript</p>
+        <article class="card">
+          <div class="thumb">
+            <svg width="100%" height="100%" viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Project thumbnail">
+              <rect width="200" height="120" rx="10" fill="#0f172a"></rect>
+              <text x="50%" y="55%" fill="#fff" font-family="Inter, sans-serif" font-size="16" text-anchor="middle">Shopify Demo</text>
+            </svg>
+          </div>
+          <h3>Shopify Store Mock</h3>
+          <p class="card-desc">Theme tweaks, product grid, and checkout UX polish (demo store).</p>
+          <div class="card-meta">Shopify · Liquid · CSS</div>
+          <div class="card-actions">
+            <a class="btn" href="#">Live demo</a>
+            <a class="link" href="#">Case study</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb">
+            <svg width="100%" height="100%" viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Project thumbnail">
+              <rect width="200" height="120" rx="10" fill="#0f172a"></rect>
+              <text x="50%" y="55%" fill="#fff" font-family="Inter, sans-serif" font-size="16" text-anchor="middle">WordPress</text>
+            </svg>
+          </div>
+          <h3>WordPress Custom</h3>
+          <p class="card-desc">Theme customization and plugin setup for a small business site.</p>
+          <div class="card-meta">WordPress · PHP · CSS</div>
+          <div class="card-actions">
+            <a class="btn" href="#">Live demo</a>
+            <a class="link" href="#">Code</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb">
+            <svg width="100%" height="100%" viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Project thumbnail">
+              <rect width="200" height="120" rx="10" fill="#0f172a"></rect>
+              <text x="50%" y="55%" fill="#fff" font-family="Inter, sans-serif" font-size="16" text-anchor="middle">CSS Anim</text>
+            </svg>
+          </div>
+          <h3>CSS Animation Playground</h3>
+          <p class="card-desc">Keyframes demos: fade-in, slide-up, and interactive hover states.</p>
+          <div class="card-meta">CSS · @keyframes · Accessibility</div>
+          <div class="card-actions">
+            <a class="btn" href="#">Live demo</a>
+            <a class="link" href="#">Code</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact container reveal">
+      <h2>Contact</h2>
+      <p class="muted">Want to build something? Send a short message — I typically respond within a couple business days.</p>
+
+      <!-- Netlify form -->
+      <form name="contact" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact">
+        <label>Name
+          <input type="text" name="name" required>
+        </label>
+
+        <label>Email
+          <input type="email" name="email" required>
+        </label>
+
+        <label>Message
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+
+        <button class="btn" type="submit">Send Message</button>
+      </form>
+
+      <p class="small">Or reach me directly: <a href="mailto:peter.deleon@gmail.com">peter.deleon@gmail.com</a> · <a href="https://github.com/pdeleon29" target="_blank" rel="noopener">GitHub</a> · <a href="https://www.linkedin.com/in/pedrodeleon" target="_blank" rel="noopener">LinkedIn</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© Tatsu Solutions — Pedro De Leon · Built with HTML/CSS · Deploy on Netlify</small>
+    </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
