@@ -1,7 +1,7 @@
 
 
 [build]
-  publish = "pdeleon29.github.io"
+  publish = "/"
   command = ""
 
 [context.production.environment]
