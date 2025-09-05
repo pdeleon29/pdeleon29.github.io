@@ -8,18 +8,23 @@
   <link rel="stylesheet" href="../styles.css">
   <style>
     .blog-post { max-width: 700px; margin: 3rem auto; background: #fff; border-radius: 1.2em; box-shadow: 0 4px 32px #0f172a22; padding: 2.5rem 2rem; }
-    .blog-post h1 { font-size: 2.2rem; margin-bottom: 1.2rem; }
-    .blog-post .meta { color: #888; font-size: 1rem; margin-bottom: 2rem; }
-    .blog-post img { max-width: 100%; border-radius: 1em; margin: 2rem 0; }
-    .blog-post a { color: #38bdf8; text-decoration: underline; }
+    .blog-post h1 { font-size: 2.4rem; margin-bottom: 1.2rem; background: linear-gradient(90deg, #0ea5a3 30%, #38bdf8 100%); color: #fff; padding: 1rem 1.5rem; border-radius: 1em 1em 0 0; box-shadow: 0 2px 12px #0ea5a322; }
+    .blog-post .meta { color: #38bdf8; font-size: 1rem; margin-bottom: 2rem; font-weight: 500; }
+    .blog-post img { max-width: 100%; border-radius: 1em; margin: 2rem 0; box-shadow: 0 2px 12px #0ea5a322; }
+    .blog-post a { color: #0ea5a3; text-decoration: underline; font-weight: 500; }
+    .blog-post h2 { color: #0ea5a3; margin-top: 2.5rem; margin-bottom: 1rem; font-size: 1.4rem; }
+    .blog-post ul, .blog-post ol { padding-left: 1.5rem; margin-bottom: 1.5rem; }
+    .blog-post li { margin-bottom: .7em; line-height: 1.7; }
+    .callout { background: #e0f7fa; border-left: 5px solid #0ea5a3; padding: 1.2em 1.5em; border-radius: 0.7em; margin: 2rem 0; color: #0f172a; font-size: 1.08em; }
   </style>
 </head>
 <body>
   <article class="blog-post">
-    <h1>How to Use Netlify: A Simple Guide for Developers</h1>
-    <div class="meta">September 5, 2025 · by Pedro De Leon</div>
-    <img src="https://www.netlify.com/v3/img/components/logomark.png" alt="Netlify logo" />
-    <p>Netlify is a powerful platform for deploying static websites and modern web apps. It’s fast, free for personal projects, and packed with features like continuous deployment, custom domains, and built-in form handling. Here’s how to get started:</p>
+  <h1>How to Use Netlify: A Simple Guide for Developers</h1>
+  <div class="meta">September 5, 2025 · by Pedro De Leon</div>
+  <img src="https://www.netlify.com/v3/img/components/logomark.png" alt="Netlify logo" style="max-width:120px;display:block;margin:2rem auto 1.5rem auto;" />
+  <div class="callout">Netlify makes it easy to launch, manage, and scale your website with zero hassle. Perfect for developers, freelancers, and small businesses!</div>
+  <p style="font-size:1.15em;">Netlify is a powerful platform for deploying static websites and modern web apps. It’s fast, free for personal projects, and packed with features like continuous deployment, custom domains, and built-in form handling. Here’s how to get started:</p>
     <h2>1. Connect Your GitHub Repository</h2>
     <ul>
       <li>Sign up at <a href="https://www.netlify.com/" target="_blank">Netlify.com</a> and log in.</li>
