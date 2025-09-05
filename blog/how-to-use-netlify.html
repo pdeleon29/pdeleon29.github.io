@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Use Netlify: A Simple Guide for Developers</title>
+  <meta name="description" content="Step-by-step guide to deploying your website with Netlify, including continuous deployment and Netlify Forms.">
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    .blog-post { max-width: 700px; margin: 3rem auto; background: #fff; border-radius: 1.2em; box-shadow: 0 4px 32px #0f172a22; padding: 2.5rem 2rem; }
+    .blog-post h1 { font-size: 2.2rem; margin-bottom: 1.2rem; }
+    .blog-post .meta { color: #888; font-size: 1rem; margin-bottom: 2rem; }
+    .blog-post img { max-width: 100%; border-radius: 1em; margin: 2rem 0; }
+    .blog-post a { color: #38bdf8; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <article class="blog-post">
+    <h1>How to Use Netlify: A Simple Guide for Developers</h1>
+    <div class="meta">September 5, 2025 · by Pedro De Leon</div>
+    <img src="https://www.netlify.com/v3/img/components/logomark.png" alt="Netlify logo" />
+    <p>Netlify is a powerful platform for deploying static websites and modern web apps. It’s fast, free for personal projects, and packed with features like continuous deployment, custom domains, and built-in form handling. Here’s how to get started:</p>
+    <h2>1. Connect Your GitHub Repository</h2>
+    <ul>
+      <li>Sign up at <a href="https://www.netlify.com/" target="_blank">Netlify.com</a> and log in.</li>
+      <li>Click <strong>“Add new site”</strong> &rarr; <strong>“Import an existing project”</strong>.</li>
+      <li>Connect your GitHub (or GitLab/Bitbucket) account and select your repository.</li>
+      <li>Choose your build settings (for static sites, just use <code>npm run build</code> or leave blank for plain HTML/CSS).</li>
+      <li>Click <strong>“Deploy site”</strong>.</li>
+    </ul>
+    <h2>2. Set Up Continuous Deployment</h2>
+    <p>Every time you push to your main branch, Netlify will automatically rebuild and redeploy your site. No manual uploads needed!</p>
+    <h2>3. Add a Custom Domain</h2>
+    <ul>
+      <li>Go to <strong>Site settings &rarr; Domain management</strong>.</li>
+      <li>Add your custom domain and follow the DNS instructions.</li>
+      <li>Netlify provides free HTTPS/SSL certificates automatically.</li>
+    </ul>
+    <h2>4. Use Netlify Forms for Contact Pages</h2>
+    <ul>
+      <li>Add <code>data-netlify="true"</code> to your form tag.</li>
+      <li>Submissions will appear in your Netlify dashboard under <strong>Forms</strong>.</li>
+      <li>You can set up email notifications or integrations with Zapier, Slack, and more.</li>
+    </ul>
+    <h2>5. Bonus: Deploy Previews & Rollbacks</h2>
+    <ul>
+      <li>Every pull request gets its own deploy preview URL for easy testing.</li>
+      <li>You can roll back to any previous deploy with one click.</li>
+    </ul>
+    <h2>Conclusion</h2>
+    <p>Netlify makes modern web development and deployment simple. Try it for your next project and enjoy fast, reliable hosting with zero hassle!</p>
+    <p><a href="/blog/index.html">← Back to Blog</a></p>
+  </article>
+</body>
+</html>
